@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+
+    <title>Astro - Productos</title>
+    <script src="https://kit.fontawesome.com/2254a47057.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="header header--sticky" id="header">
+        <a href="index.html" class="header__logo">
+            <img class="header__logo-image" src="img/Logo.png" alt="Logo empresa">
+        </a>
+
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link button">Inicio</a></li>
+                <li class="header__nav-item "><a href="#carousel" class="header__nav-link button">Cartelera</a></li>
+                <li class="header__nav-item "><a href="#store" class="header__nav-link button  button--selected">Catalogo</a></li>
+                <li class="header__nav-item"><a href="#contacto" class="header__nav-link button">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header__user">
+            <i class="header__user-icon fa-solid fa-user"></i>
+         <div class="header__user-login-hover">
+            <form class="header__user-login">
+                <i class="fa-solid fa-sort-up"></i> 
+                
+                <div class="header__grupo-login">
+                    <input type="text" class="header__user-input input" placeholder="Email...">
+                    <!-- <i class="fa-solid fa-eye"></i> -->
+                </div>
+
+                <div class="header__grupo-login">
+                    <input type="text" class="header__user-input input" placeholder="Contraseña..."><i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <a href="#" id="header__user-recuperar"><p>¿Olvidaste la contraseña?</p></a>
+                <input type="submit" class="button button--selected" value="Ingresar">
+            </form>
+         </div>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <section class="carousel" id="carousel">
+            <i class="fa-solid fa-arrow-left carousel__left-arrow" ></i>
+
+            <div class="carousel__content">
+                <img src="img/productos/cuadro.png" alt="Foto carousel productos" class="carousel__content-image">
+                <div class="carousel__content-info">
+                    <h1 class="carousel__content-title">CUADRO ASTRONAUTA</h1>
+                    <p class="carousel__content-subtitle">Dimensiones de 120 x 80cm</p>
+                    <a href="error404.html" class="carousel__content-button button button--selected" >COMPRAR</a>
+                </div>
+            </div>
+        <i class="fa-solid fa-arrow-right carousel__right-arrow" ></i>
+  
+        </section>
+
+
+        <section class="store" id="store">
+
+            <h2 class="store__title-main">Catalogo</h2>
+
+
+            <form action="form.php" class="store__form" method="post">
+
+                <fieldset class="store__filter-container">
+
+                    <h4 class="store__title">Categorias</h4>
+                    <div class="store__checkboxes">
+                        <input type="checkbox" class="store__checkbox" id="checkbox-1">
+                        <label for="checkbox-1" class="store__checkbox-label">Libros</label>
+
+                    </div>
+                    <div class="store__checkboxes">
+
+                        <input type="checkbox" class="store__checkbox" id="checkbox-2" checked>
+                        <label for="checkbox-2" class="store__checkbox-label">Juguetes</label>
+
+                    </div>
+                    <div class="store__checkboxes">
+
+                        <input type="checkbox" class="store__checkbox" id="checkbox-3">
+                        <label for="checkbox-3" class="store__checkbox-label">Cuadros</label>
+
+                    </div>
+                    <div class="store__checkboxes">
+
+                        <input type="checkbox" class="store__checkbox" id="checkbox-4">
+                        <label for="checkbox-4" class="store__checkbox-label">Instrumentos ópticos</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="store__filter-container  store__filter-container--middle">
+                    <h4 class="store__title">Precio</h4>
+                    <div class="store__inputs">
+                        <input type="text" class="store__input input" placeholder="Desde 500$">
+                        -
+                        <input type="text" class="store__input input" placeholder="Hasta 3500$">
+                    </div>
+                    <input type="button" value="Filtrar" class="store__button button">
+                </fieldset>
+
+                <fieldset class="store__filter-container">
+
+                    <h4 class="store__title">Marcas</h4>
+                    <div class="store__radio">
+                        <input type="radio" class="store__radio" value="1" name="radio" id="radio-1">
+
+                        <label for="radio-1" class="store__radio-label">Canon</label>
+                    </div>
+                    <div class="store__radio">
+
+                        <input type="radio" class="store__radio" value="2" name="radio" id="radio-2">
+                        <label for="radio-2" class="store__radio-label">Orion</label>
+
+                    </div>
+                    <div class="store__radio">
+                        <input type="radio" class="store__radio" value="3" name="radio" id="radio-3" checked>
+                        <label for="radio-3" class="store__radio-label">GiantView</label>
+                    </div>
+                    <!-- <div class="store__radio">
+                        <input type="radio" class="store__radio" value="4" name="radio" id="radio-4">
+                        <label for="radio-4" class="store__radio-label">Opción 4 </label>
+                    </div> -->
+
+                </fieldset>
+            </form>
+
+
+            <div class="store__items-container">
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/atlasUniverso.png" alt="Libro atlas del universo" class="store__item-image">
+                    </div>
+
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Atlas del Universo</h3>
+                        <p class="store__item-price">$1225</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/cartaEstelar.webp"  alt="Imagen producto Carta estelar laminada" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Carta estelar laminada</h3>
+                        <p class="store__item-price">$525</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <figure class="store__item-content-image image-relative">
+                        <img src="img/productos/cohete.png" alt="Kit cohete de Estes Tandem-x" class="store__item-image">
+                    </figure>
+              
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Kit de Cohete de Estes Tandem-X</h3>
+                        <p class="store__item-price">$3500</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/cosmosCarl.png" alt="Cosmos de Carl Sagan" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">"Cosmos" de Carl Sagan</h3>
+                        <p class="store__item-price">$875</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/cuadro.png" alt="Cuadro Astronauta<" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Cuadro Astronauta</h3>
+                        <p class="store__item-price">$700</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <figure class="store__item-content-image image-relative">
+                        <img src="img/productos/prismaticos2.png" alt="Prismáticos GiantView 20x80" class="store__item-image">
+                    </figure>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Prismáticos GiantView 20x80</h3>
+                        <p class="store__item-price">$3500</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/prismaticos3.png" alt="Prismáticos Canon 18x50 IS" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Prismáticos Canon 18x50 IS</h3>
+                        <p class="store__item-price">$48,000 UYU</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/rompecabezas.webp" alt="Rompecabezas del sistema solar" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Rompecabezas del sistema solar</h3>
+                        <p class="store__item-price">$1,400</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <figure class="store__item-content-image image-relative">
+                        <img src="img/productos/telescopio.png" alt="Telescopio PowerSeeker 70AZ" class="store__item-image">
+                    </figure>
+                   
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Telescopio PowerSeeker 70AZ</h3>
+                        <p class="store__item-price">$4000</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/telescopio2.png" alt="Telescopio Orion SkyQuest XT8 Classic Dobsonian" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Telescopio Orion SkyQuest XT8 Classic Dobsonian</h3>
+                        <p class="store__item-price">$5300</p>
+                    </div>
+                </article>
+
+
+            
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/cartaEstelar.webp" alt="Carta estelar laminada" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Carta estelar laminada</h3>
+                        <p class="store__item-price">$525</p>
+                    </div>
+                </article>
+
+                <article class="store__item">
+                    <figure class="store__item-content-image image-relative">
+                        <img src="img/productos/cuadro.png" alt="Cuadro Astronauta" class="store__item-image ">
+                    </figure>
+               
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Cuadro Astronauta</h3>
+                        <p class="store__item-price">$700</p>
+                    </div>
+                </article>
+
+
+                <article class="store__item">
+                    <div class="store__item-content-image image-relative">
+                        <p class="offer card-sale">OFERTA</p>
+                        <img src="img/productos/rompecabezas.webp" alt="Rompecabezas del sistema solar" class="store__item-image">
+                    </div>
+                    <div class="store__item-content">
+                        <h3 class="store__item-title">Rompecabezas del sistema solar</h3>
+                        <p class="store__item-price">$1,400</p>
+                    </div>
+                </article>
+
+
+            
+
+            </div>
+
+            <a href="#" class="themes__button button" >Cargar Mas</a>
+        </section>
+        <section class="contact">
+            <i class="fa-solid fa-user-astronaut contact__icon"></i>
+
+            <div class="contact__left">
+
+                <div class="contact__titles">
+                    <h3 class="contact__title">CONTACTANOS</h3>
+                    <p class="contact__subtitle">Nos comunicarmenos con vos en la brevedad.</p>
+                </div>
+
+                <form action="contacto.php" class="contact__form" method="post">
+                    <div class="contact__input-container  contact__input-container--1">
+                        <label for="input1" class="contact__label">Nombre y apellido</label>
+                        <input type="text" class="contact__form-input input" id="input1" placeholder="Ingrese su nombre aqui..." required>
+
+                    </div>
+
+                    <div class="contact__input-container  contact__input-container--2">
+                        <label for="input2" class="contact__label">Correo electronico</label>
+                        <input type="text" class="contact__form-input input" id="input2" placeholder="Ingrese su correo electronico aqui..." required>
+                    </div>
+
+                    <div class="contact__input-container contact__input-container--3">
+                        <label for="input3" class="contact__label">Tipo de asunto</label>
+                        <select name="opciones" class="contact__form-input input" id="input3">
+                            <option value="Opcion">Compra</option>
+                            <option value="Opcion">Devolución</option>
+                            <option value="Opcion" selected>Consulta</option>
+                        </select>
+
+                    </div>
+
+                    <div class="contact__input-container  contact__input-container--4">
+                        <label for="input4" class="contact__label">Asunto</label>
+                        <textarea id="input4"
+                            class="contact__form-input contact__form-textarea input" placeholder="Ingrese aqui..." required></textarea>
+                        <p class="contact__form-info">Máximo de 500 caracteres.</p>
+                        <input type="submit" class="contact__button button" value="Enviar">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="contact__right" id="contacto">
+
+                <article class="contact__notices">
+
+              
+                        <img src="img/CatalogoPage/nuevoPlaneta.png" alt="Foto noticias" class="contact__notice-image">
+             
+
+                    <div class="contact__notice-info">
+                        <h4 class="contact__notice-title">Descubierto Nuevo Planeta</h4>
+                        <p class="contact__notice-subtitle">Posible mundo habitable encontrado en sistema estelar cercano.</p>
+                        <input type="button" class="contact__notices__button button" value="Ver mas">
+                    </div>
+
+                </article>
+
+                <article class="contact__notices">
+
+                    
+                        <img src="img/CatalogoPage/eclipse.png" alt="Foto noticias" class="contact__notice-image">
+           
+
+                    <div class="contact__notice-info">
+                        <h4 class="contact__notice-title">Eclipse Solar Próximo</h4>
+                        <p class="contact__notice-subtitle">Fenómeno solar visible en breve, prepárate para observarlo.</p>
+                        <input type="button" class="contact__notices__button button" value="Ver mas">
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+       
+        <a href="#carousel"  class="footer__icon-container">
+            <i class="fa-solid fa-arrow-up footer__icon"></i>
+        </a>
+       
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-item">Terminos de Servicio</li>
+                <li class="footer__list-item">Privacidad</li>
+                <li class="footer__list-item">Servicios</li>
+            </ul>
+
+            <ul class="footer__social-links">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"> <i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

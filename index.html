@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Astro</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2254a47057.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <header class="header" id="header">
+            <a href="#" class="header__logo">
+                <img class="header__logo-image" src="img/Logo.png" alt="Logo empresa">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html"
+                            class="header__nav-link button button--selected">Inicio</a></li>
+                    <li class="header__nav-item "><a href="#themes" class="header__nav-link button">Productos</a></li>
+                    <li class="header__nav-item"><a href="#SpaceGalery" class="header__nav-link button">Galeria</a></li>
+                    <li class="header__nav-item"><a href="Catalogo.html#contacto"
+                            class="header__nav-link button">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div  class="header__user">
+                <i class="header__user-icon fa-solid fa-user"></i>
+
+             <div class="header__user-login-hover">
+                <form class="header__user-login">
+                    <i class="fa-solid fa-sort-up"></i> 
+                    
+                    <div class="header__grupo-login">
+                        <input type="text" class="header__user-input input" placeholder="Email...">
+                        <!-- <i class="fa-solid fa-eye"></i> -->
+                    </div>
+    
+                    <div class="header__grupo-login">
+                        <input type="text" class="header__user-input input" placeholder="Contraseña..."><i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <a href="#" id="header__user-recuperar"><p>¿Olvidaste la contraseña?</p></a>
+                    <input type="submit" class="button button--selected" value="Ingresar">
+                </form>
+             </div>
+
+            </div>
+
+        </header>
+
+        <div class="banner-container">
+            <h1 class="banner-container__title">ASTRO</h1>
+            <p class="banner-container__text">Conéctate con el espacio y descubre nuestros productos únicos.</p>
+            <input type="text" class="banner-container__input input" placeholder="Buscar...">
+            <input type="button" class="banner-container__button button button--selected " value="Buscar">
+        </div>
+
+        <div class="hero__scroll-down">
+            <a href="#themes">
+                <i class="fa-solid fa-arrow-down hero__icon"></i>
+                <p class="hero__text">VER MAS</p>
+            </a>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <section class="themes" id="themes">
+            <i class="fa-solid fa-meteor  icon themes__icon"></i>
+
+            <h2 class="themes__title">PRODUCTOS DESTACADOS</h2>
+
+            <div class="themes__container">
+                <article class="themes__item ">
+                    <div class="themes__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/telescopio.png" class="themes__item-image"
+                            alt="Imagen producto Telescopio Telescopio PowerSeeker 70AZ">
+                    </div>
+
+                    <div class="themes__item-content">
+                        <h3 class="themes__item-title">Telescopio PowerSeeker 70AZ</h3>
+                        <p class="themes__item-price">$4,000</p>
+                    </div>
+                </article>
+
+                <article class="themes__item">
+                    <div class="themes__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/prismaticos2.png" class="themes__item-image"
+                            alt="Imagen producto Prismáticos GiantView 20x80">
+                    </div>
+                    <div class="themes__item-content">
+                        <h3 class="themes__item-title">Prismáticos GiantView 20x80</h3>
+                        <p class="themes__item-price">$3,500</p>
+                    </div>
+                </article>
+                <article class="themes__item">
+                    <figure class="themes__item-content-image">
+                        <img src="img/productos/cartaEstelar.webp" class="themes__item-image"
+                            alt="Imagen producto Carta estelar laminada">
+                    </figure>
+
+                    <div class="themes__item-content">
+                        <h3 class="themes__item-title">Carta estelar laminada</h3>
+                        <p class="themes__item-price">$525</p>
+                    </div>
+                </article>
+                <article class="themes__item">
+                    <div class="themes__item-content-image image-relative">
+                        <p class="offer">OFERTA</p>
+                        <img src="img/productos/cohete.png" class="themes__item-image"
+                            alt="Imagen producto Kit de Cohete Tandem-X">
+                    </div>
+                    <div class="themes__item-content">
+                        <h3 class="themes__item-title">Kit de Cohete Tandem-X</h3>
+                        <p class="themes__item-price">$3,500</p>
+                    </div>
+                </article>
+                <article class="themes__item">
+                    <figure class="themes__item-content-image">
+                        <img src="img/productos/cuadro.png" class="themes__item-image"
+                            alt="Imagen producto Cuadro de Astronauta">
+                    </figure>
+
+                    <div class="themes__item-content">
+                        <h3 class="themes__item-title">Cuadro de Astronauta</h3>
+                        <p class="themes__item-price">$700</p>
+                    </div>
+                </article>
+            </div>
+
+            <a href="Catalogo.html#store" class="themes__button button">Cargar Mas</a>
+
+        </section>
+
+
+        <section class="space-galery" id="SpaceGalery">
+
+            <h2 class="space-galery__title">DESCUBRE EL CIELO</h2>
+
+            <div class="space-galery__container">
+
+
+                <article class="space-galery__item space-galery__item--1 centerXY">
+                    <p class="space-galery__item-title">JUPITER</p>
+                </article>
+                <article class="space-galery__item space-galery__item--2 centerXY">
+                    <p class="space-galery__item-text">"La nebulosa espacial es una nube de gas y polvo en el espacio,
+                        donde nacen y mueren estrellas."</p>
+                </article>
+                <article class="space-galery__item space-galery__item--3">
+
+                </article>
+                <article class="space-galery__item space-galery__item--4 centerXY">
+                    <table>
+                        <tr>
+                            <th>Planetas</th>
+                            <th>Diametro (km)</th>
+                        </tr>
+                        <tr>
+                            <td>Jupiter</td>
+                            <td>139,822</td>
+                        </tr>
+                        <tr>
+                            <td>Neptuno</td>
+                            <td>49,244</td>
+                        </tr>
+                    </table>
+                </article>
+                <article class="space-galery__item space-galery__item--5 centerXY">
+                    <p class="space-galery__item-text">"Un cometa es un objeto celeste formado por hielo y polvo que
+                        viaja a través del espacio con una cola brillante."</p>
+
+                </article>
+                <article class="space-galery__item space-galery__item--6 centerXY">
+                    <p class="space-galery__item-title">NEPTUNO</p>
+                </article>
+                <article class="space-galery__item space-galery__item--7 centerXY">
+                    <p class="space-galery__item-text">"Un agujero negro es una región del espacio con una gravedad
+                        extrema que atrapa todo, incluso la luz."</p>
+
+                </article>
+                <article class="space-galery__item space-galery__item--8">
+                    <div class="image-relative">
+                        <p class="space-galery__item-title--relative">IMAGEN EXCLUSIVA</p>
+                    </div>
+                </article>
+                <article class="space-galery__item space-galery__item--9">
+
+                </article>
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <a href="#header" class="footer__icon-container">
+            <i class="fa-solid fa-arrow-up footer__icon"></i>
+        </a>
+
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-item">Terminos de Servicio</li>
+                <li class="footer__list-item">Privacidad</li>
+                <li class="footer__list-item">Servicios</li>
+            </ul>
+
+            <ul class="footer__social-links">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"> <i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
